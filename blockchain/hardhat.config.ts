@@ -15,6 +15,9 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    hardhat: {
+      chainId: 1337,
+    },
     goerli: {
       url: process.env.GOERLI_URL || "",
       accounts:
