@@ -10,7 +10,12 @@ export default function Header() {
       align="center"
       as="header"
     >
-      <Text fontSize={{ base: "5xl", md: "6xl" }} as="h1" fontWeight="bold">
+      <Text
+        role="heading"
+        fontSize={{ base: "5xl", md: "6xl" }}
+        as="h1"
+        fontWeight="bold"
+      >
         Save the Pets
       </Text>
       <Button variant="btn-primary">
