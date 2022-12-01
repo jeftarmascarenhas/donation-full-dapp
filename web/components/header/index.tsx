@@ -1,6 +1,5 @@
 import { Stack, Text, Button } from "@chakra-ui/react";
-import useWeb3 from "@hooks/useWeb3";
-import React from "react";
+import { useWeb3 } from "@contexts/web3Provider";
 
 export default function Header() {
   const { connectWallet, isConnected } = useWeb3();

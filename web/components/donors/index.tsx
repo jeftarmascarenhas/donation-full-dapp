@@ -1,7 +1,7 @@
 import { Avatar, VStack, HStack, Text, Spinner, Tag } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-import useWeb3 from "@hooks/useWeb3";
+import { useWeb3 } from "@contexts/web3Provider";
 
 const truncateAddress = (wallet: string) =>
   `${wallet.slice(0, 5)}...${wallet.slice(wallet.length - 4, wallet.length)}`;
@@ -19,8 +19,8 @@ export default function Donors() {
         donations.map((item) => (
           <HStack
             bgColor="gray.800"
-            key={item}
-            p="4"
+            key={item.id}
+            p="2"
             borderRadius="full"
             justifyContent="space-between"
           >
