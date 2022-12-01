@@ -17,9 +17,11 @@ pragma solidity ^0.8.4;
 contract Donation {
     address owner;
     uint256 public total;
-    Donor[] public donotions;
+    uint256 private ids;
+    Donor[] private donotions;
 
     struct Donor {
+        uint256 id;
         address donor;
         uint256 value;
     }
@@ -41,7 +43,8 @@ contract Donation {
 
     function donate() external payable {
         require(msg.value > 0, "value not enough");
-        Donor memory donotion = Donor(msg.sender, msg.value);
+        ids++;
+        Donor memory donotion = Donor(ids, msg.sender, msg.value);
         donotions.push(donotion);
         total += msg.value;
     }

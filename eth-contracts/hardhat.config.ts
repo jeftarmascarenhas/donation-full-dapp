@@ -14,6 +14,9 @@ const config: HardhatUserConfig = {
       },
     },
   },
+  paths: {
+    artifacts: "../web/artifacts",
+  },
   networks: {
     hardhat: {
       chainId: 1337,
