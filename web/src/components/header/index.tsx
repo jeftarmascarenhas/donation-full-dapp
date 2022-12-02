@@ -19,6 +19,7 @@ export default function Header() {
           alt="Crypto Donation Logo"
         />
         <Text
+          role="heading"
           fontSize={{ base: "4xl", md: "6xl" }}
           lineHeight={{ base: "none" }}
           as="h1"
