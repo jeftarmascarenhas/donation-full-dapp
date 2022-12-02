@@ -26,18 +26,18 @@ Donation dApp é um repositório que criei para o curso gratuito Ethers.js no me
 - [x] [Criando Wallet | Ethers.js](https://youtu.be/bOd5WpU7h7E)
 - [x] [Transação(Transferência) | Ethers.js](https://youtu.be/NWezFwf8TUk)
 - [x] [Utils no Ethers.js | Ethers.js](https://youtu.be/ddFiyIZM2Hg)
-- [ ] Crypto Donation e configurações | Ethers.js
-- [ ] Criação smart contract com Hardhat.js | Ethers.js
-- [ ] Interação com smart contract | Ethers.js
-- [ ] Análise de resposta de transações | Ethers.js
-- [ ] Análise de métodos para smart contract | Ethers.js
-- [ ] Escutando Eventos de smart contract | Ethers.js
-- [ ] Dapp de Doação fullstack instalação e configurações | Ethers.js
-- [ ] Dapp de Doação fullstack escrevendo smart contract | Ethers.js
-- [ ] Dapp de Doação fullstack testando smart contract | Ethers.js
-- [ ] Dapp de Doação fullstack deploy smart contract | Ethers.js
-- [ ] Dapp de Doação fullstack Frontend React | Ethers.js
-- [ ] Dapp de Doação fullstack integrando e finalizando | Ethers.js
+- [ ] Configurando Hardhat | dApp Full stack
+- [ ] Criação smart contract com Hardhat.js | dApp Full stack
+- [ ] Interação com smart contract | dApp Full stack
+- [ ] Análise de resposta de transações | dApp Full stack
+- [ ] Análise de métodos para smart contract | dApp Full stack
+- [ ] Escutando Eventos de smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack instalação e configurações | dApp Full stack
+- [ ] Dapp de Doação fullstack escrevendo smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack testando smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack deploy smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack Frontend React | dApp Full stack
+- [ ] Dapp de Doação fullstack integrando e finalizando | dApp Full stack
 
 ## Existem duas pastas web e blockchain
 
