@@ -1,4 +1,4 @@
-# Donation dApp(En)
+# Crypto Donation dApp(En)
 
 Welcome to the final project where we will use what was learned in the [Minicurso Ethers.js](https://github.com/jeftarmascarenhas/minicurso-ethersjs)
 
@@ -12,7 +12,7 @@ Donation dApp is a repo that I created to Ethers.js free course on my [YouTube c
 
 This repo is part [Minicurso Ethers.js](https://github.com/jeftarmascarenhas/minicurso-ethersjs)
 
-# Donation dApp(PT_br)
+# Crypto Donation dApp(PT_br)
 
 Bem-vindo ao projeto final onde usaremos o que foi aprendido no curso [Minicurso Ethers.js](https://github.com/jeftarmascarenhas/minicurso-ethersjs) para fazer este projeto.
 
