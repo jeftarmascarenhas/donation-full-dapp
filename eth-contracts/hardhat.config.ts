@@ -14,7 +14,13 @@ const config: HardhatUserConfig = {
       },
     },
   },
+  paths: {
+    artifacts: "../web/src/artifacts",
+  },
   networks: {
+    hardhat: {
+      chainId: 1337,
+    },
     goerli: {
       url: process.env.GOERLI_URL || "",
       accounts:

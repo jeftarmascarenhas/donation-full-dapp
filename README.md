@@ -18,6 +18,27 @@ Bem-vindo ao projeto final onde usaremos o que foi aprendido no curso [Minicurso
 
 Donation dApp é um repositório que criei para o curso gratuito Ethers.js no meu [YouTube channel](https://www.youtube.com/@nftchoose).
 
+## O que vamos ver nesse mini curso?
+
+- [x] [Introdução ao Ethers.js](https://youtu.be/seym2JW_0Bg)
+- [x] [Provider e Signer no Ethers.js](https://youtu.be/ClJVw0Avkz4)
+- [x] [API Provider a Ethers.js](https://youtu.be/iXuFhWAlFl0)
+- [x] [Criando Wallet | Ethers.js](https://youtu.be/bOd5WpU7h7E)
+- [x] [Transação(Transferência) | Ethers.js](https://youtu.be/NWezFwf8TUk)
+- [x] [Utils no Ethers.js | Ethers.js](https://youtu.be/ddFiyIZM2Hg)
+- [ ] Configurando Hardhat | dApp Full stack
+- [ ] Criação smart contract com Hardhat.js | dApp Full stack
+- [ ] Interação com smart contract | dApp Full stack
+- [ ] Análise de resposta de transações | dApp Full stack
+- [ ] Análise de métodos para smart contract | dApp Full stack
+- [ ] Escutando Eventos de smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack instalação e configurações | dApp Full stack
+- [ ] Dapp de Doação fullstack escrevendo smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack testando smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack deploy smart contract | dApp Full stack
+- [ ] Dapp de Doação fullstack Frontend React | dApp Full stack
+- [ ] Dapp de Doação fullstack integrando e finalizando | dApp Full stack
+
 ## Existem duas pastas web e blockchain
 
 **web**: é uma pasta que tem front-end com next.js
