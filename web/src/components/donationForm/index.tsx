@@ -6,21 +6,16 @@ import {
   TagLabel,
   Divider,
 } from "@chakra-ui/react";
-import { useWeb3 } from "@contexts/web3Provider";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const values = ["0.05", "0.02", "0.01"];
 
 export default function DonationForm() {
   const [value, setValue] = useState("0.02");
 
-  const { donate, loadingDonate } = useWeb3();
-
   const handleValue = (newValue: string) => setValue(newValue);
   const handleSend = () => {
-    if (value && value !== "0") {
-      donate(value);
-    }
+    console.log(value);
   };
 
   return (
@@ -52,7 +47,6 @@ export default function DonationForm() {
         variant="btn-primary"
         size="lg"
         width="full"
-        isLoading={loadingDonate}
         loadingText="Loading..."
         onClick={handleSend}
       >

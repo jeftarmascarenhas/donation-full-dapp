@@ -1,9 +1,9 @@
 import { Stack, Text, Button, HStack } from "@chakra-ui/react";
-import { useWeb3 } from "@contexts/web3Provider";
 import Image from "next/image";
 
 export default function Header() {
-  const { connectWallet, isConnected } = useWeb3();
+  const isConnected = false;
+
   return (
     <Stack
       direction={["column", "row"]}
@@ -27,7 +27,7 @@ export default function Header() {
           Crypto Donation
         </Text>
       </HStack>
-      <Button variant="btn-primary" onClick={connectWallet}>
+      <Button variant="btn-primary">
         {!isConnected ? "Connect Wallet" : "Connected"}
       </Button>
     </Stack>

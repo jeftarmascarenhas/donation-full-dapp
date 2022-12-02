@@ -12,13 +12,4 @@ export type DonationItemFormat = {
   value: string;
 };
 
-export type Web3Context = {
-  connectWallet: () => void;
-  donate: (amount: string) => Promise<void>;
-  donations: DonationItemFormat[];
-  loadingDonate: boolean;
-  loadingDonations: boolean;
-  showConfetti: boolean;
-  isConnected: boolean;
-  total: string;
-};
+export type Web3Context = {};
