@@ -25,7 +25,8 @@ export default function DonationForm() {
 
   return (
     <VStack
-      bgColor="whiteAlpha.800"
+      bgColor="whiteAlpha.300"
+      backdropFilter="saturate(180%) blur(8px)"
       borderRadius="md"
       align="flex-start"
       spacing="8"
@@ -33,16 +34,16 @@ export default function DonationForm() {
       px={{ base: "6", md: "8" }}
     >
       <HStack align="center" spacing="4">
-        {values.map((item) => (
+        {values.map((etherValue) => (
           <Tag
             borderRadius="full"
-            bgColor={value === item ? "gray.800" : "gray.600"}
+            bgColor={value === etherValue ? "gray.800" : "gray.600"}
             size={{ base: "md", md: "lg" }}
-            key={item}
+            key={etherValue}
             cursor="pointer"
-            onClick={() => handleValue(item)}
+            onClick={() => handleValue(etherValue)}
           >
-            <TagLabel>{item} ETH</TagLabel>
+            <TagLabel>{etherValue} ETH</TagLabel>
           </Tag>
         ))}
       </HStack>

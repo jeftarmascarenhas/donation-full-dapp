@@ -1,5 +1,5 @@
 import { Avatar, VStack, HStack, Text, Spinner, Tag } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon, AiOutlineUser } from "@chakra-ui/icons";
 
 import { useWeb3 } from "@contexts/web3Provider";
 
@@ -25,7 +25,7 @@ export default function Donors() {
             justifyContent="space-between"
           >
             <HStack>
-              <Avatar size="sm" src="https://bit.ly/dan-abramov" />
+              <Avatar size="sm" />
               <Text fontWeight="semibold" color="white">
                 {truncateAddress(item.donor)}
               </Text>
