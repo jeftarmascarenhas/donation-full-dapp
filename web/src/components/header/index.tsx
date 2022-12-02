@@ -24,7 +24,7 @@ export default function Header() {
           as="h1"
           fontWeight={{ base: "extrabold", md: "bold" }}
         >
-          Save the Pets
+          Crypto Donation
         </Text>
       </HStack>
       <Button variant="btn-primary" onClick={connectWallet}>

@@ -1,5 +1,5 @@
 import { Avatar, VStack, HStack, Text, Spinner, Tag } from "@chakra-ui/react";
-import { ChevronRightIcon, AiOutlineUser } from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 import { useWeb3 } from "@contexts/web3Provider";
 
