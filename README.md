@@ -26,7 +26,8 @@ Donation dApp é um repositório que criei para o curso gratuito Ethers.js no me
 - [x] [Criando Wallet | Ethers.js](https://youtu.be/bOd5WpU7h7E)
 - [x] [Transação(Transferência) | Ethers.js](https://youtu.be/NWezFwf8TUk)
 - [x] [Utils no Ethers.js | Ethers.js](https://youtu.be/ddFiyIZM2Hg)
-- [ ] Configurando Hardhat | dApp Full stack
+- [x] [O que você vai aprender | dApp Full stack](https://youtu.be/xUscIEKVCxQ)
+- [x] [Configurando Hardhat | dApp Full stack](https://youtu.be/dfJZG1cxBAY)
 - [ ] Criação smart contract com Hardhat.js | dApp Full stack
 - [ ] Interação com smart contract | dApp Full stack
 - [ ] Análise de resposta de transações | dApp Full stack
