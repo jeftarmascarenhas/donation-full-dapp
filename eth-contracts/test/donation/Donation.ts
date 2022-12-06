@@ -88,9 +88,7 @@ describe("Donation", () => {
       );
     });
     it("should do withdraw if is owner", async () => {
-      const { donationContract, alice, billy, owner } = await loadFixture(
-        setupFixture
-      );
+      const { donationContract, billy } = await loadFixture(setupFixture);
       const value = ethers.utils.parseEther("0.05");
       await donationContract.connect(billy).donate({ value });
 

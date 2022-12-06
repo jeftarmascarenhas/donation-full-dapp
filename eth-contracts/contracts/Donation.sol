@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-/**
- * Contract Style Guide
+/** Contract Style Guide
  * Variables
  * Mappings
  * Structs
