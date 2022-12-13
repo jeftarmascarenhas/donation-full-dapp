@@ -28,17 +28,21 @@ Donation dApp é um repositório que criei para o curso gratuito Ethers.js no me
 - [x] [Utils no Ethers.js | Ethers.js](https://youtu.be/ddFiyIZM2Hg)
 - [x] [O que você vai aprender | dApp Full stack](https://youtu.be/xUscIEKVCxQ)
 - [x] [Configurando Hardhat | dApp Full stack](https://youtu.be/dfJZG1cxBAY)
-- [ ] Criação smart contract com Hardhat.js | dApp Full stack
-- [ ] Interação com smart contract | dApp Full stack
-- [ ] Análise de resposta de transações | dApp Full stack
-- [ ] Análise de métodos para smart contract | dApp Full stack
-- [ ] Escutando Eventos de smart contract | dApp Full stack
-- [ ] Dapp de Doação fullstack instalação e configurações | dApp Full stack
+- [x] [#01 Dapp Crypto Donation - O que você vai aprender | Ethers.js](https://youtu.be/xUscIEKVCxQ)
+- [x] [#02 Dapp Crypto Donation - Configurando Hardhatjs | Ethers.js](https://youtu.be/dfJZG1cxBAY)
+- [x] [#03 Dapp Crypto Donation - Criando contrato com Solidity | Ethers.js](https://youtu.be/d21fXoaa9p4)
+- [x] [#04 Dapp Crypto Donation - Teste Unitário do Smart Contract | Ethers.js](https://youtu.be/dtKwvAborwA)
+- [] #05 Dapp Crypto Donation - Coverage e package scripts | Ethers.js
+- [] #06 Dapp Crypto Donation - Projeto web com Next.js e Chakra UI | Ethers.js
+- [] #07 Dapp Crypto Donation - Criando componentes projeto web com Next.js | Ethers.js
+- [] #08 Dapp Crypto Donation - Configurando artefact path no hardhat | Ethers.js
+- [] #09 Dapp Crypto Donation - Criando contexto web provider | Ethers.js
+<!-- - [ ] Dapp de Doação fullstack instalação e configurações | dApp Full stack
 - [ ] Dapp de Doação fullstack escrevendo smart contract | dApp Full stack
 - [ ] Dapp de Doação fullstack testando smart contract | dApp Full stack
 - [ ] Dapp de Doação fullstack deploy smart contract | dApp Full stack
 - [ ] Dapp de Doação fullstack Frontend React | dApp Full stack
-- [ ] Dapp de Doação fullstack integrando e finalizando | dApp Full stack
+- [ ] Dapp de Doação fullstack integrando e finalizando | dApp Full stack -->
 
 ## Existem duas pastas web e blockchain
 
