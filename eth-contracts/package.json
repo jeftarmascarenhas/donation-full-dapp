@@ -1,7 +1,7 @@
 {
   "name": "hardhat-project",
   "scripts": {
-    "blockchain": "npx hardhat node",
+    "block": "npx hardhat node",
     "compile": "npx hardhat compile",
     "compile:watch": "npx hardhat watch compilation",
     "test": "npx hardhat test && npx hardhat watch test",
