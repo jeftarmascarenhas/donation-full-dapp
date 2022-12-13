@@ -32,7 +32,7 @@ export default function DonationForm() {
         {values.map((etherValue) => (
           <Tag
             borderRadius="full"
-            bgColor={value === etherValue ? "gray.800" : "gray.600"}
+            colorScheme={value === etherValue ? "blue" : "gray"}
             size={{ base: "md", md: "lg" }}
             key={etherValue}
             cursor="pointer"
