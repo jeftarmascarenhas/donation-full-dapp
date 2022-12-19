@@ -24,7 +24,7 @@ const web3ProviderContext = createContext<Web3Context>({
   total: "0",
 });
 
-const contractAddress = `0x5FbDB2315678afecb367f032d93F642f64180aa3`;
+const contractAddress = `0x86Ae9792b6cc208e1099Db8A578f37C84E83C4d5`;
 
 const metamaskToastId = "metamask-not-installed";
 
