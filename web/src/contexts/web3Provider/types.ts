@@ -14,6 +14,7 @@ export type DonationItemFormat = {
 
 export type Web3Context = {
   connectWallet: () => void;
+  disconnectWallet: () => void;
   donate: (amount: string) => Promise<void>;
   donations: DonationItemFormat[];
   loadingDonate: boolean;

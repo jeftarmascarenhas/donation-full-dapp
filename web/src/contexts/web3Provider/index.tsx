@@ -15,6 +15,7 @@ import { DonationItem, DonationItemFormat, Web3Context } from "./types";
 
 const web3ProviderContext = createContext<Web3Context>({
   connectWallet() {},
+  disconnectWallet() {},
   async donate() {},
   donations: [],
   loadingDonate: false,
@@ -33,6 +34,7 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
   const [contract, setContract] = useState<ethers.Contract>();
   const [signer, setSigner] = useState<ethers.providers.JsonRpcSigner>();
   const [donations, setDonations] = useState<DonationItemFormat[]>([]);
+  const [isConnected, setIsConnected] = useState(false);
   const [total, setTotal] = useState("0");
   const [loadingDonate, setLoadingDonate] = useState(false);
   const [loadingDonations, setLoadingDonations] = useState(false);
@@ -59,11 +61,23 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
 
   const connectWallet = async () => {
     try {
-      await provider?.send("eth_requestAccounts", []);
+      const accounts = await provider?.send("eth_requestAccounts", []);
+      if (accounts?.length) {
+        setIsConnected(true);
+      }
     } catch (error) {
       console.error(error);
       errorMsg(error);
     }
+  };
+
+  const disconnectWallet = async () => {
+    setIsConnected(false);
+    toast({
+      title: "Disconnected",
+      status: "success",
+      position: "top-right",
+    });
   };
 
   const generateContract = useCallback(async () => {
@@ -135,9 +149,7 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
     }
   };
 
-  const isConnected = signer !== undefined;
-
-  const getSigner = useCallback(() => {
+  const getSigner = useCallback(async () => {
     const currentSigner = provider?.getSigner();
     setSigner(currentSigner);
   }, [provider]);
@@ -165,9 +177,16 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
   }, [toast]);
 
   useEffect(() => {
+    async function checkConnections() {
+      const accounts = await provider?.listAccounts();
+      if (accounts?.length) {
+        setIsConnected(true);
+      }
+    }
     if (provider) {
       generateContract();
       getSigner();
+      checkConnections();
     }
   }, [provider, generateContract, getSigner]);
 
@@ -193,6 +212,7 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
   return (
     <web3ProviderContext.Provider
       value={{
+        disconnectWallet,
         connectWallet,
         donate,
         donations,
