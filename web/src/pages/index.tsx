@@ -6,6 +6,8 @@ import {
   HStack,
   Tag,
   Button,
+  Alert,
+  AlertIcon,
 } from "@chakra-ui/react";
 import { useEffect, useReducer, useRef, useState } from "react";
 import Head from "next/head";
@@ -70,6 +72,10 @@ export default function Home() {
           placeholder="empty"
         />
         <Box position="relative" zIndex="2">
+          <Alert status="success" justifyContent="center">
+            <AlertIcon />
+            Working only Goerli Network
+          </Alert>
           <VStack
             as="main"
             minH="100vh"
