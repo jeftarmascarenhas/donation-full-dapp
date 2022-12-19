@@ -1,8 +1,10 @@
 import * as dotenv from "dotenv";
+dotenv.config({ path: "./.env" });
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "solidity-coverage";
 import "hardhat-watcher";
+import "@nomiclabs/hardhat-etherscan";
 
 const config: HardhatUserConfig = {
   solidity: {
