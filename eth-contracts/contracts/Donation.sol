@@ -1,6 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
+/**
+    Developed by Jeftar Mascarenhas to NFT Choose on Youtube
+    Youtube: https://www.youtube.com/@nftchoose
+    Github: https://github.com/jeftarmascarenhas/donation-full-dapp
+*/
+
 /** Contract Style Guide
  * Variables
  * Mappings
