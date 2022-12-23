@@ -4,7 +4,6 @@ import {
   useState,
   useCallback,
   ReactNode,
-  useMemo,
   useContext,
 } from "react";
 import { useToast } from "@chakra-ui/react";
@@ -32,7 +31,6 @@ const metamaskToastId = "metamask-not-installed";
 export default function Web3Provider({ children }: { children: ReactNode }) {
   const [provider, setProvider] = useState<ethers.providers.Web3Provider>();
   const [contract, setContract] = useState<ethers.Contract>();
-  const [signer, setSigner] = useState<ethers.providers.JsonRpcSigner>();
   const [donations, setDonations] = useState<DonationItemFormat[]>([]);
   const [isConnected, setIsConnected] = useState(false);
   const [total, setTotal] = useState("0");
@@ -82,7 +80,6 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
 
   const generateContract = useCallback(async () => {
     const signerConnected = provider?.getSigner();
-    setSigner(signerConnected);
 
     const donationContract = new ethers.Contract(
       contractAddress,
@@ -149,11 +146,6 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
     }
   };
 
-  const getSigner = useCallback(async () => {
-    const currentSigner = provider?.getSigner();
-    setSigner(currentSigner);
-  }, [provider]);
-
   useEffect(() => {
     if (!isMetamaskInstalled()) {
       !toast.isActive(metamaskToastId) &&
@@ -185,10 +177,9 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
     }
     if (provider) {
       generateContract();
-      getSigner();
       checkConnections();
     }
-  }, [provider, generateContract, getSigner]);
+  }, [provider, generateContract]);
 
   useEffect(() => {
     if (contract) {
