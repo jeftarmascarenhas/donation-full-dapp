@@ -14,11 +14,11 @@ export default class Document extends NextDocument {
           <meta
             property="og:image"
             itemProp="image"
-            content="http://localhost:3000/logo.png"
+            content="https://donation-full-dapp.vercel.app/shortscreen.png"
           />
           <meta
             property="og:description"
-            content="Project was create by Jeftar Mascarenhas for your Youtube channel"
+            content="Project was created by Jeftar Mascarenhas for your Youtube channel"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://localhost:3000" />

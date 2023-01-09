@@ -38,7 +38,9 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
   const [loadingDonations, setLoadingDonations] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  const toast = useToast();
+  const toast = useToast({
+    position: "top-right",
+  });
 
   const isMetamaskInstalled = () => {
     return Boolean(window.ethereum && window.ethereum.isMetaMask);
@@ -52,7 +54,6 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
       title,
       description,
       status: "error",
-      position: "top-right",
       isClosable: true,
     });
   };
@@ -74,7 +75,6 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
     toast({
       title: "Disconnected",
       status: "success",
-      position: "top-right",
     });
   };
 
@@ -123,7 +123,7 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
       toast({
         title: "Pending Transaction",
         status: "info",
-        position: "top-right",
+
         isClosable: true,
       });
 
@@ -132,7 +132,6 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
       toast({
         title: "Successful Transaction",
         status: "success",
-        position: "top-right",
         isClosable: true,
       });
       setShowConfetti(true);

@@ -19,7 +19,8 @@
       "@global-components/*": ["./src/components/*"],
       "@global-styles/*": ["./src/styles/*"],
       "@pages/*": ["./src/pages/*"],
-      "@contexts/*": ["./src/contexts/*"]
+      "@contexts/*": ["./src/contexts/*"],
+      "@artifacts/*": ["./src/artifacts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
