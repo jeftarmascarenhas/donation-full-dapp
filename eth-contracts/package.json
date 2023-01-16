@@ -1,5 +1,6 @@
 {
   "name": "hardhat-project",
+  "license": "MIT",
   "scripts": {
     "blockchain": "npx hardhat node",
     "compile": "npx hardhat compile",

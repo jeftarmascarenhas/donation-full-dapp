@@ -28,6 +28,13 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    mumbai: {
+      url: process.env.MUMBAI_URL,
+      accounts:
+        process.env.PRIVATE_KEY_MUMBI !== undefined
+          ? [process.env.PRIVATE_KEY_MUMBI]
+          : [],
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY || "",
