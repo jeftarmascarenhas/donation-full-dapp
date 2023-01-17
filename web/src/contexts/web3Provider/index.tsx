@@ -158,12 +158,12 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
 
       return;
     }
-    if (window && window?.window) {
+    if (window && window?.ethereum) {
       const web3Provider = new ethers.providers.Web3Provider(
         window.ethereum,
         "any"
       );
-      setProvider(web3Provider);
+      // setProvider(web3Provider);
     }
   }, [toast]);
 
